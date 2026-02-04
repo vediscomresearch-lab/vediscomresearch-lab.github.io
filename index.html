@@ -837,22 +837,44 @@
             </footer>
         </section>
 
+   <!-- Script -->
         <script>
-  function scrollToSectionFromPath() {
-    const path = window.location.pathname.replace("/", "");
+  function scrollFromPath() {
+    const path = window.location.pathname.slice(1);
     if (!path) return;
 
-    const section = document.getElementById(path);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    const target = document.getElementById(path);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
     }
   }
 
-  // On page load
-  window.addEventListener("load", scrollToSectionFromPath);
+  // Handle direct URL visits like /about
+  window.addEventListener("DOMContentLoaded", scrollFromPath);
 
-  // On back/forward navigation
-  window.addEventListener("popstate", scrollToSectionFromPath);
+  // Handle back/forward buttons
+  window.addEventListener("popstate", scrollFromPath);
+
+  // Intercept nav clicks
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", e => {
+      const href = link.getAttribute("href");
+
+      if (href.startsWith("/")) {
+        e.preventDefault();
+        history.pushState({}, "", href);
+        scrollFromPath();
+      }
+    });
+  });
+
+  // Handle old #links
+  if (window.location.hash) {
+    const id = window.location.hash.slice(1);
+    history.replaceState({}, "", "/" + id);
+    window.addEventListener("load", scrollFromPath);
+  }
 </script>
+
     </body>
 </html>
