@@ -33,7 +33,7 @@
         <!--  navigation  -->
         <nav>
             <ul>
-                <li><a href="/about">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#publications">Publications</a></li>
@@ -837,44 +837,7 @@
             </footer>
         </section>
 
-   <!-- Script -->
-        <script>
-  function scrollFromPath() {
-    const path = window.location.pathname.slice(1);
-    if (!path) return;
-
-    const target = document.getElementById(path);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
-  // Handle direct URL visits like /about
-  window.addEventListener("DOMContentLoaded", scrollFromPath);
-
-  // Handle back/forward buttons
-  window.addEventListener("popstate", scrollFromPath);
-
-  // Intercept nav clicks
-  document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", e => {
-      const href = link.getAttribute("href");
-
-      if (href.startsWith("/")) {
-        e.preventDefault();
-        history.pushState({}, "", href);
-        scrollFromPath();
-      }
-    });
-  });
-
-  // Handle old #links
-  if (window.location.hash) {
-    const id = window.location.hash.slice(1);
-    history.replaceState({}, "", "/" + id);
-    window.addEventListener("load", scrollFromPath);
-  }
-</script>
+   
 
     </body>
 </html>
