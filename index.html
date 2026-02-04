@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VeDiS Com Research Group</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+
+        <!-- header  -->
+        <header>
+            <div class="container header-content">
+
+                <!-- Group Name -->
+                <div class="header-text">
+                    <h1>VeDISCom Research</h1>
+                    <p>Vehicular, Distributed, Intelligent Systems and
+                        Computing</p>
+                </div>
+
+                <div class="logo-below">
+                    <img src="/image/Vediscom-logo.JPG"
+                        alt="Logo Placeholder">
+                </div>
+
+            </div>
+        </header>
+
+        <!--  navigation  -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#news&blog">News & Blog </a></li>
+                <li>
+                    <a href="#resources"> Resources ▾</a>
+                    <ul class="dropdown">
+                        <li> <a href="#ongoing_projects">Ongoing
+                                Projects</a>
+                        </li>
+
+                        <li><a href="#software_tools">Software & Tools</a></li>
+                        <li><a href="#lect_tutorials">Lectures &
+                                Tutorials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- about section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About VeDISCom Research Group</h2>
+                <div style="text-align: justify; margin-bottom: 20px">
+                    <p style="text-align: justify; margin-bottom: 20px">
+                        VeDISCom Research is a multidisciplinary
+                        research group
+                        dedicated to advancing intelligent, distributed,
+                        and
+                        data-driven computing and communication systems.
+                        Our
+                        research spans distributed computing,
+                        communication
+                        networks, intelligent systems, and machine
+                        learning,
+                        with a
+                        strong emphasis on scalable data analysis,
+                        privacy-preserving learning, and efficient data
+                        management
+                        across heterogeneous computing environments.
+                        A central focus of our work is data partitioning
+                        and
+                        data
+                        distribution in heterogeneous distributed
+                        systems. We
+                        investigate how data, computation, and learning
+                        tasks
+                        can be
+                        efficiently partitioned, allocated, and
+                        coordinated
+                        across
+                        diverse nodes including vehicles, edge, and fog
+                        platforms,
+                        cloud infrastructures, and general distributed
+                        systems while accounting for heterogeneity in
+                        compute
+                        capability,
+                        communication bandwidth, latency, energy
+                        constraints,
+                        and trust.
+                    </p>
+                    <p style="text-align: justify; margin-bottom: 20px">
+
+                        Machine learning forms a core pillar of our
+                        research,
+                        particularly federated learning, distributed
+                        learning,
+                        and
+                        large-scale data analytics. We study how
+                        learning models
+                        can
+                        be trained and deployed collaboratively through
+                        data-
+                        and
+                        model-partitioning strategies that enable
+                        scalable,
+                        adaptive, and privacy-aware intelligence without
+                        centralized
+                        data aggregation. Our work emphasizes the tight
+                        coupling
+                        between learning performance, data distribution
+                        policies,
+                        and system-level constraints.
+                    </p>
+
+                    <p style="text-align: justify; margin-bottom: 20px">
+
+                        While vehicular communication systems, including
+                        V2X,
+                        VANETs and smart mobility platforms represent an
+                        important
+                        application domain, our proposed frameworks are
+                        inherently
+                        transferable across diverse distributed
+                        computing
+                        environments. We develop algorithms and system
+                        architectures
+                        that jointly optimize data partitioning,
+                        learning
+                        accuracy,
+                        communication efficiency, and computational
+                        resource
+                        utilization, addressing challenges such as
+                        scalability,
+                        latency, reliability, and robustness in dynamic
+                        and
+                        large-scale systems.
+
+                    </p>
+                    <p style="text-align: justify; margin-bottom: 20px">
+                        Data analysis is fundamental to our methodology.
+                        We
+                        leverage
+                        real-world datasets, network traces, and sensor
+                        data to
+                        inform the design, training, and evaluation of
+                        intelligent
+                        models and distributed algorithms. Our research
+                        combines
+                        theoretical foundations, analytical modeling,
+                        simulation-based evaluation, and experimental
+                        implementation, bridging the gap between
+                        abstract theory
+                        and
+                        deployable real-world systems.
+                        Security, privacy, and trust are embedded
+                        throughout our
+                        research agenda. We explore secure data
+                        partitioning,
+                        robust
+                        and privacy-preserving federated learning, and
+                        trustworthy
+                        distributed architectures capable of operating
+                        under
+                        adversarial conditions and resource constraints.
+                        These
+                        efforts support the development of safe,
+                        dependable, and
+                        intelligent systems for next-generation
+                        applications.
+                    </p>
+
+                    <p style="text-align: justify; margin-bottom: 20px">
+                        VeDISCom Research provides a collaborative
+                        platform for
+                        students, researchers, and industry partners to
+                        pursue
+                        forward-looking research that advances connected
+                        systems,
+                        intelligent infrastructure, and data-centric
+                        distributed
+                        computing. Through interdisciplinary
+                        collaboration and
+                        innovation, we aim to deliver impactful
+                        solutions that
+                        shape
+                        the future of smart mobility, edge intelligence,
+                        and
+                        large-scale heterogeneous distributed systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- research section -->
+        <section id="research">
+            <section  class="section alt">
+                <div class="container"
+                    style="text-align: justify; margin-bottom: 20px">
+                    <h2>Research Areas</h2>
+
+                    <div>
+
+                        <h3>1. Vehicular Ad Hoc Networks (VANETs)</h3>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Vehicular Ad Hoc Networks (VANETs) enable
+                            vehicles to
+                            communicate with each
+                            other and with roadside infrastructure to
+                            improve road
+                            safety, traffic
+                            efficiency, and intelligent transportation
+                            services. Our
+                            research focuses
+                            on building reliable, scalable, and secure
+                            communication
+                            systems for highly
+                            dynamic vehicular environments.
+                        </p>
+
+                        <h4>Vehicular Mobility Modeling</h4>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Vehicular mobility modeling studies vehicle
+                            movement
+                            patterns and traffic
+                            behavior under real-world road conditions.
+                            Accurate
+                            mobility models are
+                            essential for evaluating vehicular communication
+                            protocols, traffic control
+                            mechanisms, and intelligent transportation
+                            applications.
+                        </p>
+
+                        <h4>Security, Privacy, and Trust in V2X</h4>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Vehicle-to-Everything (V2X) communication
+                            introduces
+                            challenges related to
+                            security, privacy, and trust due to open
+                            wireless
+                            channels and high mobility.
+                            Our research addresses secure communication,
+                            authentication, privacy
+                            preservation, and trust management for safe and
+                            reliable
+                            vehicular systems.
+                        </p>
+
+                        <h3>2. Distributed Computing Systems</h3>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Distributed computing systems consist of
+                            multiple
+                            interconnected computing
+                            nodes that collaboratively process data and
+                            execute
+                            tasks. Our research
+                            investigates scalable, efficient, and reliable
+                            distributed architectures,
+                            particularly in mobility-aware and
+                            data-intensive
+                            environments.
+                        </p>
+
+                        <h4>Vehicular Cloud Computing</h4>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Vehicular cloud computing extends traditional
+                            cloud
+                            services to vehicles by
+                            utilizing onboard computing resources, roadside
+                            infrastructure, and edge
+                            servers. This research focuses on task
+                            offloading,
+                            resource sharing, and
+                            service optimization for intelligent
+                            transportation
+                            applications.
+                        </p>
+
+                        <h4>Data Partitioning and Distribution in
+                            Distributed
+                            Systems</h4>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Efficient data partitioning and distribution are
+                            critical for improving
+                            performance and scalability in distributed
+                            systems. Our
+                            work explores load
+                            balancing, data placement strategies, and
+                            communication-efficient techniques
+                            for large-scale distributed environments.
+                        </p>
+
+                        <h3>3. Artificial Intelligence &amp; Machine
+                            Learning</h3>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Artificial Intelligence (AI) and Machine
+                            Learning (ML)
+                            enable systems to
+                            learn from data and make intelligent decisions.
+                            Our
+                            research applies AI and
+                            ML techniques to vehicular networks, distributed
+                            systems, and edge computing
+                            environments.
+                        </p>
+
+                        <h4>ML and Data Analysis Algorithm Optimization</h4>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            This research focuses on improving the
+                            efficiency,
+                            accuracy, and scalability
+                            of machine learning and data analysis
+                            algorithms.
+                            Emphasis is placed on
+                            optimization techniques for training, inference,
+                            and
+                            resource-constrained
+                            systems.
+                        </p>
+
+                        <h4>Federated Learning</h4>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Federated Learning enables collaborative model
+                            training
+                            across distributed
+                            devices without sharing raw data. Our work
+                            investigates
+                            privacy-preserving,
+                            secure, and communication-efficient federated
+                            learning
+                            frameworks for
+                            vehicular and distributed systems.
+                        </p>
+
+                        <h4>Multi-Agent AI Systems Design</h4>
+                        <p style="text-align: justify; margin-bottom: 20px">
+                            Multi-agent AI systems involve multiple
+                            intelligent
+                            agents that interact and
+                            collaborate to achieve common or individual
+                            goals. Our
+                            research focuses on
+                            agent coordination, learning strategies, and
+                            decision-making in dynamic
+                            environments such as vehicular networks and
+                            smart
+                            cities.
+                        </p>
+
+                    </div>
+
+                </div>
+                </section>
+
+                <section  id="ongoing_projects" ; class="container alt">
+                    <div
+                        style="text-align: justify; margin-bottom: 20px; margin-top:20px">
+
+                        <h3 class="sub-title">Ongoing Projects </h3>
+
+                        <!-- project list -->
+                        <div class="project-list container ">
+
+                            <!-- Project Card -->
+                            <div class="project-card">
+
+                                <div class="project-middle">
+                                    <h3>Big Data Processing and
+                                        Offloading in
+                                        Vehicular Networks Using Federated
+                                        Platoon
+                                        Cloud.</h3>
+                                    <div class="tags">
+                                        <span>Task Offloading</span>
+                                        <span>Big Data</span>
+                                        <span>Vehicular Cloud</span>
+                                        <span>Load-Aware Resource
+                                            Allocation</span>
+
+                                    </div>
+
+                                    <p class="date">📅 Aug 1, 2024 - March 31,
+                                        2026</p>
+                                </div>
+
+                                <div class="project-right">
+
+                                    <button>Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Project Card -->
+                            <div class="project-card">
+
+                                <div class="project-middle">
+                                    <h3>MobiSec: A Mobility and Security-Aware
+                                        Data Distribution Scheme for Vehicular
+                                        Cloud.</h3>
+                                    <div class="tags">
+                                        <span>Security-Aware Data Sharing</span>
+                                        <span>Vehicular Cloud</span>
+                                        <span>Trust Management</span>
+                                    </div>
+                                    <p class="date">📅 June 1, 2025 - June 30,
+                                        2026</p>
+                                </div>
+
+                                <div class="project-right">
+
+                                    <button>Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Project Card -->
+                            <div class="project-card">
+
+                                <div class="project-middle">
+                                    <h3>Designing a Conceptual Framework for
+                                        Distributed Computing in Vehicular
+                                        Networks.
+                                    </h3>
+                                    <div class="tags">
+                                        <span>Vehicular Cloud Computing</span>
+                                        <span>Vehicular Fog Computing</span>
+                                        <span>Vehicular Edge Computing</span>
+                                        <span>Volunteer Computing</span>
+                                    </div>
+
+                                    <p class="date">📅 November 1, 2025 -
+                                        January. 31,
+                                        2027</p>
+                                </div>
+
+                                <div class="project-right">
+
+                                    <button>Details</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <!-- team -->
+        <section id="team" class="section">
+            <div class="container"
+                style="text-align: justify; margin-bottom: 20px">
+                <h2>Research Team</h2>
+
+                <div class="team-grid">
+
+                    <div class="team-member">
+                        <img src="image/wmd.jpeg"
+                            alt="Researcher">
+                        <h3>Dr. Wiseborn M. Danquah</h3>
+                        <p>Principal Investigator</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img
+                            src="https://picsum.photos/300/300?random=2"
+                            alt="Researcher">
+                        <h3>John Smith</h3>
+                        <p>PhD Researcher</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img
+                            src="https://picsum.photos/300/300?random=2"
+                            alt="Researcher">
+                        <h3>John Smith</h3>
+                        <p>PhD Researcher</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img
+                            src="https://picsum.photos/300/300?random=2"
+                            alt="Researcher">
+                        <h3>John Smith</h3>
+                        <p>PhD Researcher</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img
+                            src="https://picsum.photos/300/300?random=3"
+                            alt="Researcher">
+                        <h3>Mary Johnson</h3>
+                        <p>Graduate Research Assistant</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- publication -->
+        <section id="publications" class="section alt">
+            <div class="container"
+                style="text-align: justify; margin-bottom: 20px">
+                <h2>Selected Publications</h2>
+                <ul class="pub-list">
+
+                    <li>
+                        Danquah, W. M., & Altilar, D. T. (2022). Data
+                        partitioning
+                        and scheduling schemes for federated
+                        platoon-based
+                        vehicular
+                        cloud. Vehicular Communications, 38, 100529.
+
+                        <li>
+                            Danquah, W. M., & Altilar, D. T. (2021).
+                            UniDRM:
+                            Unified
+                            data and resource management for federated
+                            vehicular
+                            cloud
+                            computing. IEEE Access, 9, 157052–157067.
+                        </li>
+                        <li>
+                            Danquah, W. M., & Altilar, D. T. (2020).
+                            Vehicular
+                            cloud
+                            resource management, issues and challenges:
+                            A
+                            survey. IEEE
+                            Access, 8, 180587–180607.
+                        </li>
+                        <li>
+                            Danquah, W. M., & Altilar, D. T. (2019).
+                            Vehicular
+                            volunteer
+                            computing (VVC): A novel paradigm for the
+                            volunteering of
+                            vehicular resources; opportunities and
+                            challenges.
+                            2019
+                            International Conference on Computing,
+                            Electronics &
+                            Communications Engineering (ICCECE),
+                            208–213.
+                        </li>
+                        <li>
+                            Danquah, W. M., & Altilar, D. T. (2015).
+                            Vcloud: A
+                            security
+                            framework for vanet. In Mobile and Wireless
+                            Technology 2015
+                            (pp. 1–13). Springer.
+                        </li>
+
+                        <li>
+                            Danquah, W. M., & Altilar, T. D. (2014).
+                            HYBRIST
+                            mobility
+                            model-a novel hybrid mobility model for
+                            VANET
+                            simulations.
+                            ArXiv Preprint ArXiv:1406.0256.
+                        </li>
+
+                        <li>
+                            Kim, K. J., Castagnola, P. J. C., Kim,
+                            K.-H.,
+                            Che-aron, Z.,
+                            Cho, C., Le, D.-A., Cho, K., Lee, J., Lee,
+                            J.-Y.,
+                            Dai, H., &
+                            others. (2015). Kim, Hyunyoung Kim, Jin
+                            Young 115,
+                            123, 147
+                            Kim, Jisu. Mobile and Wireless Technology
+                            2015, 310,
+                            213.
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section id="news&blog" class="section">
+                <div class="container"
+                    style="text-align: justify; margin-bottom: 20px">
+                    <h3>News & Blog</h3>
+
+                    <details class="accordion">
+                        <summary class="accordion-title"
+                            style="color:blue">Research
+                            Collaboration Opportunity <img
+                                src="image/newIcon.png" width="50px"
+                                alt="My Image"
+                                width="200"> </summary>
+                        <div class="accordion-content">
+                            <p class="nnbp-space">
+                                VeDISCom Research is pleased to announce
+                                an
+                                open call for interested students and
+                                researchers to join and collaborate in
+                                the areas
+                                of Vehicular Networks, Distributed
+                                Computing,
+                                and Machine Learning.
+
+                            </p>
+
+                            <p class="nnbp-space">
+                                We are actively working on research
+                                topics
+                                related to intelligent transportation
+                                systems,
+                                vehicular and edge/cloud computing,
+                                distributed
+                                and federated learning, and scalable
+                                parallel
+                                processing techniques. This initiative
+                                aims to
+                                bring together individuals who are
+                                passionate
+                                about research, innovation, and
+                                collaborative
+                                problem-solving.
+
+                            </p>
+
+                            <p class="nnbp-space">
+
+                                This opportunity is open to
+                                undergraduate and
+                                postgraduate students, as well as
+                                researchers,
+                                who are eager to contribute to ongoing
+                                and
+                                future research projects, participate in
+                                technical discussions, and co-author
+                                high-quality research publications.
+
+                            </p>
+                            <p class="nnbp-space">
+
+                                Interested individuals are
+                                encouraged to express
+                                their interest by sending contacting us:
+                                <ul class="nnbp-space">
+                                    <a
+                                        href="mailto:danquahm@carolinau.edu">
+                                        Email 📧 :
+                                        danquahm@carolinau.edu</a>
+
+                                </ul>
+                            </p>
+                            <p>
+                                Include a brief introduction and your
+                                area(s) of interest. We look forward to
+                                collaborating with motivated
+                                individuals.
+                            </p>
+                        </p>
+
+                    </div>
+
+                </details>
+
+                <p>
+
+                </div>
+
+            </section>
+
+
+            <!--  resources     -->
+            <section class="section alt">
+                <div class="container"
+                    style="text-align: justify; margin-bottom: 20px">
+                    <h2>Resources</h2>
+
+                    <section id="software_tools" class="section alt">
+                        <div class="container"
+                            style="text-align: justify; margin-bottom: 20px">
+
+                            <h3>Software and tools</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit.
+                                Sed
+                                repudiandae quas ipsam minus earum
+                                facilis nam.
+                                Quibusdam
+                                officia et sit blanditiis accusantium
+                                provident
+                                molestias.
+                                Est
+                                commodi itaque fugit soluta voluptatem!
+                            </p>
+                        </div>
+                    </section>
+
+                    <!--  tutorials and lectures    -->
+                    <section id="lect_tutorials" class="section alt">
+                        <div class="container"
+                            style="text-align: justify; margin-bottom: 20px">
+                            <h3>Lectures & Tutorials</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Perferendis, iusto ab in fugit cumque
+                                doloremque
+                                dicta
+                                facere laborum ratione atque natus
+                                tenetur.
+                                Ipsam, ex
+                                dolorem labore quos ipsa assumenda
+                                veritatis?
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                    
+
+                    <!-- contact -->
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <div class="container"
+                    style="text-align: justify; margin-bottom: 20px">
+
+                    <div class="team-grid">
+                        <div>
+                            <h2>Contact</h2>
+
+                            <p>Department of Computer
+                                Science</p>
+                            <p></p>
+                            <p>Carolina University</p>
+                            <p>
+
+                                <a target="_blank"
+                                    href="https://www.google.com/maps/place/Piedmont+International+University/@36.0879488,-80.2523158,17z/data=!3m1!4b1!4m5!3m4!1s0x88605dfdd7186a87:0xb19fdb8f608bb9e8!8m2!3d36.0879488!4d-80.2501271">420
+                                    South Broad Street<br>
+                                    Winston-Salem, NC
+                                    27101&nbsp;</a>
+                            </p>
+                            <p>Email: <a
+                                    href="mailto:vehiccomresearch@university.edu">danquahm@carolinau.edu</a></p>
+                            <p>📞 <a href="tel:+336-297-7951">+1
+                                    (336)
+                                    297-7951</a></p>
+                        </div>
+
+                        <div>
+                            <h2>Social Media</h2>
+                            <h3>Follow us</h3>
+                            <p> <a
+                                    href="https://www.linkedin.com"
+                                    style="text-decoration: none; color: black;">
+                                    LinkedIn</a>
+
+                                <a
+                                    href="https://www.linkedin.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn">
+                                    <i
+                                        class="fab fa-linkedin"></i>
+                                </a>
+                            </p>
+
+                            <p>
+
+                                <a
+                                    href="https://www.linkedin.com"
+                                    style="text-decoration: none; color: black;">
+                                    X (Twitter)</a>
+
+                                <a href="https://twitter.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Twitter">
+                                    <i
+                                        class="fab fa-x-twitter"></i>
+                                </a>
+
+                            </p>
+                            <p>
+                                <a
+                                    href="https://www.linkedin.com"
+                                    style="text-decoration: none; color: black;">
+                                    github</a>
+                                <a
+                                    href="https://github.com/yourusername"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub">
+                                    <i
+                                        class="fab fa-github"></i>
+                                </a>
+                            </p>
+
+                            <p> Facebook
+                                <a
+                                    href="https://www.facebook.com"
+                                    target="_blank">
+                                    <i
+                                        class="fab fa-facebook"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                        <div>
+                            <img src="image/vediscom-logo2.JPG"
+                                alt="vediscom logo" />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <div class="footer-container">
+                    <p>&copy; 2026 VeDISCom Research
+                        Group</p>
+
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>
