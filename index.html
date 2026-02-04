@@ -836,5 +836,23 @@
                 </div>
             </footer>
         </section>
+
+        <script>
+  function scrollToSectionFromPath() {
+    const path = window.location.pathname.replace("/", "");
+    if (!path) return;
+
+    const section = document.getElementById(path);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  // On page load
+  window.addEventListener("load", scrollToSectionFromPath);
+
+  // On back/forward navigation
+  window.addEventListener("popstate", scrollToSectionFromPath);
+</script>
     </body>
 </html>
