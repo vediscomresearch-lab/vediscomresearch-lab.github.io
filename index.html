@@ -690,25 +690,86 @@
 </section>
 
 
-            <!--  resources     -->
-            <section class="section alt">
-                <div class="container"
-                    style="text-align: justify; margin-bottom: 10px">
-                    <h2>Resources</h2>
-                    <!--  tutorials and lectures    -->
-                    <section id="lect_tutorials" class="section alt">
-                        <div class="container"
-                            style="text-align: justify; margin-bottom: 20px">
-                            <h3 style="margin-bottom:10px">Lectures & Tutorials</h3>
-                            
-                            <p>
-                                <h4 style="margin-top:10px">Overview of Vehicular Communications</h4>
-                               <object width="425" height="344"><param name="movie" value="https://www.youtube.com/v/LfGX8sdDZro&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="https://www.youtube.com/v/LfGX8sdDZro&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
-                            </p>
+           <!-- Resources -->
+<section class="section alt">
+    <div class="container"
+        style="text-align: justify; margin-bottom: 10px">
 
-                        </div>
+        <h2>Resources</h2>
 
-                    </section>
+        <!-- Lectures and Tutorials -->
+        <section id="lect_tutorials" class="section alt">
+
+            <div class="container"
+                style="text-align: justify; margin-bottom: 20px">
+
+                <h3 style="margin-bottom: 20px">
+                    Lectures & Tutorials
+                </h3>
+
+                <!-- Video Grid -->
+                <div class="video-grid">
+
+                    <!-- Video 1 -->
+                    <div class="video-item">
+
+                        <iframe
+                            src="https://www.youtube.com/embed/LfGX8sdDZro"
+                            title="Overview of Vehicular Communications"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+
+                        <h4>
+                            Overview of Vehicular Communications
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+</section>
+
+
+<!-- Video Grid CSS -->
+<style>
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .video-item {
+        width: 100%;
+    }
+
+    .video-item iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: none;
+        display: block;
+    }
+
+    .video-item h4 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    /* One column on phones */
+    @media (max-width: 768px) {
+        .video-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
 
                     
 
